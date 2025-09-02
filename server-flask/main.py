@@ -11,7 +11,24 @@ def holaMundo():
 @app.route('/api/usuarios')
 def obtenerUsuarios():
     return {
-        'users': ['Alice', 'Bob', 'Charlie']
+        'usuarios': [
+            {
+                'id': 1,
+                'nombre': 'Juan'
+            },
+            {
+                'id': 2,
+                'nombre': 'María'
+            },
+            {
+                'id': 3,
+                'nombre': 'Pedro'
+            },
+            {
+                'id': 4,
+                'nombre': 'Ana'
+            }      
+        ]
     }
 
 @app.route('/api/frutas')
