@@ -8,7 +8,7 @@ CORS(app)  # Habilitar CORS para todas las rutas, se recomienda especificar orí
 def holaMundo():
     return '¡Hola Mundo!'
 
-@app.route('/api/users')
+@app.route('/api/usuarios')
 def obtenerUsuarios():
     return {
         'users': ['Alice', 'Bob', 'Charlie']
